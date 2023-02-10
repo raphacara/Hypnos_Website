@@ -1,0 +1,237 @@
+/* The logic is quite simple : have a fixed height container with display:flex property. Blocks inside have lower heights. Odd and even are self-aligned with flex-start or flex-end properties */
+
+html{
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+body{
+  width:100%;
+  height:100%;
+  font-family:Arial, sans-serif;
+  font-size:16px;
+  line-height:30px;
+  padding:20px;
+  margin:0;
+}
+*{
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.logo {
+  top: 2rem;
+  left: 2rem;
+}
+
+.logo img {
+  max-width: 200px;
+  margin-top:0.2rem;
+  margin-left: 2em;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.menu {
+  position:absolute;
+  top: 1.85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.menu li a {
+  position:absolute;
+  margin-bottom:-0.5em;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+h2{
+  margin: 0;
+  padding: 10px; 
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size:18px
+}
+.container{
+  margin-top: -80px;
+  min-height: 900px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.inner-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:600px;
+}
+.box{
+    height:400px;
+    width:25%;
+    background-color:#fff;
+    display:flex;
+    justify-content:flex-around;
+    flex-direction:column;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42);box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.1);
+}
+.box p{
+    color: #000;
+    padding:20px;
+    flex:1;
+}
+.footer{
+    -ms-flex-item-align: end;
+    align-content: flex-end;
+    background:linear-gradient(to bottom, #fff, #90cde3);
+    opacity: 0.5;
+    height:30px;
+    display: block;
+    position:relative
+}
+
+.footer1{
+  -ms-flex-item-align: end;
+  align-content: flex-end;
+  background:linear-gradient(to bottom, #eee, #90cde3);
+  opacity: 0.5;
+  height:30px;
+  display: block;
+  position:relative
+}
+
+.box_1, .box_3{
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    overflow: hidden;
+    -webkit-transition: opacity 0.5s,-webkit-transform 0.7s;
+    transition: opacity 0.5s,-webkit-transform 0.7s;
+    -o-transition: opacity 0.5s,transform 0.7s;
+    transition: opacity 0.5s,transform 0.7s;
+    transition: opacity 0.5s,transform 0.7s,-webkit-transform 0.7s;
+    margin-bottom: 20px;
+}
+.box_1.animated, .box_3.animated {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+.box_2,.box_4{
+    background-color:#eee;
+    -ms-flex-item-align: start;
+    align-self: flex-start;  
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    overflow: hidden;
+    -webkit-transition: opacity 0.5s,-webkit-transform 0.7s;
+    transition: opacity 0.5s,-webkit-transform 0.7s;
+    -o-transition: opacity 0.5s,transform 0.7s;
+    transition: opacity 0.5s,transform 0.7s;
+    transition: opacity 0.5s,transform 0.7s,-webkit-transform 0.7s;
+    margin-bottom: 20px;
+
+}
+.box_2.animated, .box_4.animated{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+
+
+  
+body {
+    font-size:16px;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-color: #90cde3;
+}
+
+article {
+    width: 70%;
+    margin: 80px auto 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0 0 0.5em 0;
+    font-family: 'Cambridge', Century Gothic ;
+    line-height: normal;
+}
+
+.figure {
+    width: 100%;
+    margin: 0;
+    padding: 350px 0 0 0;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    overflow: hidden;
+  background: url(img/clouds.jpg);
+  animation: clouds_animation 75s linear infinite;
+}
+
+div.container{
+  background: url(img/clouds.jpg);
+  animation: clouds_animation 75s linear infinite;
+
+
+}
+
+@keyframes clouds_animation {
+  
+  0%  {background-position: 0  0;}
+  100%  {background-position: -2122px 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
