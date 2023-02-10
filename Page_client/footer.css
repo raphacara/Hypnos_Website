@@ -1,0 +1,31 @@
+.trait
+{
+    width: 38vw;
+    height: 1px;
+    background: gray;
+    border-radius: 50px;
+    margin-top: 8vh;
+    margin-left: 11vw;
+}
+
+footer {
+    position: absolute;
+    margin-top: 8px;
+    left: 19vw;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+footer ul li{
+    margin-right: 3vw;
+}
+
+footer ul a{
+    color: gray;
+    font-size: 14px;
+    font-weight: 80;
+}
