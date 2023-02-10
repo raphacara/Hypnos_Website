@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Page de connexion admin</title>
+        <link href="styleadminc.css" rel="stylesheet" type="text/css">
+        <link href="hypnos.sql">
+        <link rel="icon" type="png" href="media/iconoff.png" />
+	</head>
+	<body>
+        <header><h2 class ="slogan"><strong>SANDSELLERS, LE GARDIEN DE VOS NUITS</strong></h2></header>
+            <img class="logo" src="media/iconoff.png">
+        <h2 class="Connexion">Connexion Admin</h2> <br>
+        <h4 class="champs">Veuillez remplir les champs suivants</h4>
+        <div class= "container">
+        <form name="conjs" onsubmit="validateForm()"action="connexion.php" method="POST">
+            <div>
+                <input onsubmit="validmail()" class="email" type="email" id="mail" name="email" placeholder="&nbsp;Email">
+            </div>
+            <div>
+                <input class="mdp" type="password" id="mdp" name="mdp" placeholder="&nbsp;Mot de passe">
+            </div>
+            <div>
+                <button class="boutonConnexion" type="submit" name="Connexion">Se connecter</button>
+            </div>
+        </form> 
+        <hr>
+        <h4 class="inscrire">Vous n'avez pas encore de compte? Inscrivez-vous <a href="../Page_inscription_connexion/inscription.html"><span>&nbsp;ici</span></a></h4>
+        </div>
+        </div>
+    </body>
+</html>

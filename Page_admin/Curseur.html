@@ -1,0 +1,111 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+        <meta charset="utf-8" />  
+        <link rel="stylesheet" href="Curseur.css" /> 
+        <title>HYPNOS - Page admin</title>  
+        <link rel="icon" type="png" href="iconoff.png" />
+
+    </head>
+
+<body>
+<div class="wrapper h-100">
+
+   <aside class="sidebar p-0 navbar-fixed">
+    <nav class="navbar navbar-expand flex-xl-column flex-row align-items-start p-0 scroll-lg">
+
+        <div class="navbar-brand d-none d-xl-flex w-100 justify-content-center flex-column">
+            <a href="/elearning/formation-home">
+                <img src="images/logoblancH.png" alt="Logo Hypnos" class="logoblancH">
+            </a>
+                        <p>
+                par <b>Sandsellers</b>
+            </p>
+                    </div>
+
+
+
+        <div id="menu" class="collapse">
+            <ul class="navbar-nav w-100 flex-md-column">
+
+         
+  
+
+          <li class="nav-item">
+            <a href="Utilisateur.php"  class="nav-link    " style="">
+                <span class="d-inline">Utilisateurs</span>
+            </a>    
+          </li>
+          
+
+          
+          <li class="nav-item">
+            <a href="Contenu.html"  class="nav-link    " style="">
+                <span class="d-inline">Contenu</span>
+            </a>
+          </li>
+
+              
+          <li class="nav-item">
+            <a href="Curseur.html"  class="nav-link   active " style="">
+                <span class="d-inline">Curseurs</span>
+            </a>
+          </li>
+
+
+         
+          <li class="nav-item">
+            <a href="Moncompte.html"  class="nav-link  d-xl-none  " style="">
+                <span class="d-inline">Mon compte</span>  
+            </a>
+          </li>
+          
+            </ul>
+        </div>
+    </nav>
+</aside>
+
+<sectionn class="droite">
+  <div id="interieur">
+    <h1>
+    Réglages des seuils :
+    </h1>
+    <br>
+      <p id="dB">
+        <input type="range" id="thresholdRange" min="0" max="30" value="5" oninput="updateThreshold(this.value)">
+            <p> Sonomètre (dB) :<span id="thresholdValue"> 5</span> </p> <p> </p>
+                <script>
+                function updateThreshold(value) {
+                  document.getElementById("thresholdValue").innerHTML = value;
+                  // Insérer ici le code pour mettre à jour les seuils dans la base de données en utilisant la valeur de "value"
+                }
+              </script>
+      </p>
+
+      <p id="SPO2">
+        <input type="range" id="thresholdRange2" min="88" max="100" value="97" oninput="updateThreshold2(this.value)">
+            <p> Oxygénation (%) :<span id="thresholdValue2"> 97</span> </p> <p> </p>
+                <script>
+                function updateThreshold2(value) {
+                  document.getElementById("thresholdValue2").innerHTML = value;
+                  // Insérer ici le code pour mettre à jour les seuils dans la base de données en utilisant la valeur de "value"
+                }
+              </script>
+      </p>
+
+      <p id="BPM">
+        <input type="range" id="thresholdRange3" min="30" max="140" value="70" oninput="updateThreshold3(this.value)">
+            <p> Fréquence cardiaque (BPM) :<span id="thresholdValue3"> 70</span> </p> <p> </p>
+                <script>
+                function updateThreshold3(value) {
+                  document.getElementById("thresholdValue3").innerHTML = value;
+                  // Insérer ici le code pour mettre à jour les seuils dans la base de données en utilisant la valeur de "value"
+                }
+              </script>
+      </p>
+  </div> 
+</section>
+
+
+    </body>
+</html>
