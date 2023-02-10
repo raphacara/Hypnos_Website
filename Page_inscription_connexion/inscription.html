@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>Page d'inscription</title> 
+        <link href="styleInscription.css" rel="stylesheet" type="text/css">
+        <link href="hypnos.sql">
+        <link rel="icon" type="png" href="media/iconoff.png" />
+	</head>
+	<body>
+        <header><h2 class="slogan">SANDSELLERS, LE GARDIEN DE VOS NUITS</h2></header>
+        <p>
+            <img src="media/iconoff.png" alt="Logo Hypnos" class="logo">
+        </p>
+        <h2 class="inscription">Inscription</h2>
+        
+        <h4 class ="champs">Veuillez remplir les champs suivants</h4>
+        <form  method="POST" action="testinscription.php"   > 
+            <div>
+                <input class="prenom" type="text" id="prenom" name="prenom" placeholder="Pr&eacute;nom">
+            </div>
+            <div>
+                <input class="nom" type="text" id="nom" name="nom" placeholder="Nom"> 
+            </div>
+            <div>
+                <input class="email" type="email" id="email" name="email" placeholder="Email"> 
+            </div>
+            
+            <div>
+                <input class="mdp" type="password" id="mdp" name="mdp" placeholder="Mot de passe">
+            </div>
+            <div>
+                <button class="boutonInscription" type="submit" onclick="openForm()">Cr&eacute;er mon compte</button>
+            </div>
+        </form>
+        <hr>
+        <h4 class="connecter">Vous avez d&eacute;j&agrave; un compte? Connectez-vous <a href="connexion.html"><span>&nbsp;ici</span></a></h4>
+        <script>
+
+            
+
+            function validateEmail(email) {
+                    var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                    return re.test(email);
+                }
+            function validate() {
+                var $result = $("#result");
+                var email = $("#email").val();
+                $result.text("");
+
+                if (validateEmail(email)) {
+                    $result.text(email + " est valide");
+                    $result.css("color", "blue");
+                } else {
+                    $result.text(email + " n'est pas valide");
+                    $result.css("color", "red");
+                }
+                return false;
+            }
+                $("#validate").on("click", validate);
+
+
+    
+    
+    
+        </script> 
+	</body>
+    
+</html>

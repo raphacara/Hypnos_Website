@@ -1,0 +1,137 @@
+header{
+    position: absolute;
+    width: 100%;
+    height: 61px;
+    left: 0px;
+    top: 1px;
+    
+    background: #000000;
+}
+
+.slogan{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+
+}
+img{
+    height:10%;
+    width:10%;
+    object-fit: contain;
+    margin-left:46.4%;
+    margin-top: 6%;
+
+}
+
+
+
+.container{
+    margin-left: 35%;
+    margin-top:20px;
+    width:200px;
+}
+
+.ref{
+    position: relative;
+    justify-items:center;
+width: 140px;
+height: 10px;
+margin-left: 44.5%;
+margin-top: 1%;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 38px;
+
+
+color: #000000;
+}
+
+.champs{
+    text-align: center;
+    position: relative;
+width: 303px;
+height: 37px;
+margin-left: 38.2%;
+margin-top: 40px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+
+
+color: #000000;
+
+}
+.code{
+    position: relative;
+width: 300px;
+height: 43px;
+margin-left: 19%;
+top: 10px;
+
+background: #FFFFFF;
+border-radius: 5px;
+}
+
+.validation{
+    position: relative;
+width: 290px;
+height: 45px;
+margin-left: 23%;
+margin-top: 40px;
+color: white;
+
+background-color:#E2B548;
+background-size: cover;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 40px;
+
+box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+.validation:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+hr{
+    position: relative;
+    width: 445px;
+    height: 0px;
+margin-left: 32.3%;
+margin-top: 22px;
+border: 1px solid #a7a5a5;
+background-color: #a7a5a5;}
+.nocode{
+    position: relative;
+    width: 400px;
+    height: 37px;
+    margin-left: 34.3%;
+    margin-top: 18px;
+    opacity: 0.8;
+    font-family: 'Source Sans Pro'; 
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+    
+    
+    color: #000000;
+}
+h4.nocode{text-align: center;}
+span{
+    color: darkgoldenrod;
+}
+a{
+    text-decoration:none; 
+}
+a:hover{
+    color: darkgoldenrod;
+    text-decoration:underline; 
+}

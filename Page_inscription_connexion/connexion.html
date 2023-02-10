@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Page de connexion</title>
+        <link href="style_connexion.css" rel="stylesheet" type="text/css">
+        <link href="hypnos.sql">
+        <link rel="icon" type="png" href="media/iconoff.png" />
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+	</head>
+	<body>
+        <header><h2 class ="slogan"><strong>SANDSELLERS, LE GARDIEN DE VOS NUITS</strong></h2></header>
+            <img class="logo" src="media/iconoff.png">
+        <h2 class="Connexion">Connexion</h2>
+        <h4 class="champs">Veuillez remplir les champs suivants</h4>
+        <div class= "container">
+        <form name="conjs" onsubmit="validateForm()"action="testconnexion.php" method="POST">
+            <div>
+                <input class="email" type="email" id="mail" name="email" placeholder="&nbsp;Email">
+            </div>
+            <div>
+                <input class="mdp" type="password" id="mdp" name="mdp" placeholder="&nbsp;Mot de passe">
+            </div>
+            <div>
+                <button class="boutonConnexion" type="submit" name="Connexion">Se connecter</button>
+            </div><br><br>
+            <div class="google" style="margin-left: 50%;">
+                <div class="g-recaptcha" data-sitekey="6LdntBokAAAAALIaYaG90vLxc4EzcaDriye_pjMK"></div>
+             </div>
+        </form> 
+        <hr>
+        <h4 class="inscrire">Vous n'avez pas encore de compte? Inscrivez-vous <a href="inscription.html"><span>&nbsp;ici</span></a></h4>
+        <h4 class="inscrire">Se connecter en tant qu'admin <a href="../Page_admin/connexion.html"><span>&nbsp;ici</span></a></h4>
+        </div>
+        </div>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["conjs"]["email"].value;
+            var y = document.forms["conjs"]["mdp"].value;
+            if (x == "") {
+            alert("L'email est vide");
+            return false;
+            }if(y==""){
+                alert("Le mot de passe est vide");
+            return false;
+            }
+}
+
+    </script>
+	</body>
+</html>
+
+<!-- --> 

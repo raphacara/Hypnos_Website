@@ -1,0 +1,45 @@
+<!DOCTYPE html>  
+
+<html>
+	<head>
+        <meta charset="utf-8" />  
+		<title>Page de référence du produit</title>
+        <link href="ref.css" rel="stylesheet" type="text/css">
+        <link href="hypnos.sql">
+        <link rel="icon" type="png" href="media/iconoff.png" />
+	</head>
+	<body>
+        <header><h2 class ="slogan"><strong>SANDSELLERS, LE GARDIEN DE VOS NUITS</strong></h2></header>
+            <img class="logo" src="media/ref.png">
+        <h2 class="ref">Référence</h2>
+        <h4 class="champs">Veuillez entrer la référence de votre produit Hypnos :</h4>
+        <div class= "container">
+        <form action="testinscription.php" method="POST">
+            <div>
+                <input class="code" type="text" id="code" name="pruduct_code" placeholder="&nbsp;XXXXXXXXX">
+            </div>
+                <button class="validation" type="submit" name="ref">Valider</button>
+            </div>
+        </form> 
+        <hr>
+        <h4 class="nocode" onclick="on()">Vous n'avez pas encore de produit Hypnos ? </br> Dirigez vous vers la boutique en <span>&nbsp;cliquant ici</span>
+            <script>
+                function on(){
+                    var result= confirm("Voulez-vous achetez maintenant un produit Hypnos?");
+                if(result == true){
+                    document.location.href="../Page_acceuil/pageaccueil.php#boutique";
+                }else{
+                    document.location.href="../Page_client/moncompte.php";
+                }
+
+                }
+                
+                
+            </script>
+            </h4>
+        </div>
+        </div>
+	</body>
+</html>
+
+
